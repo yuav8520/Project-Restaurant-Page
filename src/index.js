@@ -3,6 +3,7 @@ const body=document.querySelector('body');
 const content = document.createElement('div');
 const header=document.createElement('header');
 const nav=document.createElement('nav');
+
 const ul=document.createElement('ul');
 
 
@@ -19,6 +20,9 @@ nav.append(ul);
 const li=document.querySelectorAll('li');
 console.log(li);
 /*const h2=document.createElement('h2');
+=======
+const h2=document.createElement('h2');
+>>>>>>> origin/main
 const img = document.createElement('img');
 const div=document.createElement('div');
 
