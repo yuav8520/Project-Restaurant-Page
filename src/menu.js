@@ -7,3 +7,4 @@ function content() {
   body.append(text);
   body.append(div);
   }
+  export{content}

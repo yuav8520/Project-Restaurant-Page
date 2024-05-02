@@ -9,3 +9,4 @@ function content() {
     body.append(div);
   
   }
+  export{content}

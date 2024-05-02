@@ -1,24 +1,30 @@
-
+import { content as contentMenu } from "./menu.js";
+import { content as contentHome} from "./home.js";
+import { content as contentContack } from "./contact.js";
 const body=document.querySelector('body');
 const content = document.createElement('div');
 const header=document.createElement('header');
 const nav=document.createElement('nav');
-
 const ul=document.createElement('ul');
-
-
 
 const liHome=document.createElement('li');
 const liMenu=document.createElement('li');
 const liContact=document.createElement('li');
-/*li.addEventListener('click',()=>{
-    console.log('clicked');
-});*/
-
-
+ul.append(liHome);
+ul.append(liMenu);
+ul.append(liContact);
+liHome.id='home';
+liMenu.id='menu';
+liContact.id='contact';
 nav.append(ul);
-const li=document.querySelectorAll('li');
-console.log(li);
+const li=ul.querySelectorAll('li');
+ul.append(li);
+li.forEach((item)=>{
+    item.addEventListener('click',()=>{
+        console.log(`clicked ${item.id}`);
+    });
+});
+
 /*const h2=document.createElement('h2');
 =======
 const h2=document.createElement('h2');
