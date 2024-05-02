@@ -21,7 +21,19 @@ const li=ul.querySelectorAll('li');
 ul.append(li);
 li.forEach((item)=>{
     item.addEventListener('click',()=>{
+        if(item.id === 'home') {
+            contentHome();
+          }
+      
+          if(item.id === 'menu') {
+            contentMenu();
+          }
+      
+          if(item.id === 'contact') {
+            contentContack();
+          }
         console.log(`clicked ${item.id}`);
+
     });
 });
 
