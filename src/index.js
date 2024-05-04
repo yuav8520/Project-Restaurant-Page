@@ -1,3 +1,4 @@
+import './styles.css';
 import { content as contentMenu } from "./menu.js";
 import { content as contentHome} from "./home.js";
 import { content as contentContack } from "./contact.js";
@@ -16,9 +17,11 @@ ul.append(liContact);
 liHome.id='home';
 liMenu.id='menu';
 liContact.id='contact';
+liHome.textContent='Home';
+liMenu.textContent='Menu';
+liContact.textContent='Contact';
 nav.append(ul);
 const li=ul.querySelectorAll('li');
-ul.append(li);
 li.forEach((item)=>{
     item.addEventListener('click',()=>{
         if(item.id === 'home') {
