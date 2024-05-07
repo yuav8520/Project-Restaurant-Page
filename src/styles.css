@@ -13,9 +13,26 @@ li{
 #content {
     width: fit-content; 
     margin: 0 auto; 
-    padding: 20px;
+    
    }
    .cover:not(.hidden){
     background-color: red;
    }
+  .cover{
+    box-sizing: border-box;
+    background-color: blue;
+    color: white;
+    padding: 20px;
+    text-align: center;
    
+   }
+   #home{
+
+
+   }
+   #cover{
+
+   }
+   #contact{
+
+   }

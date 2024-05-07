@@ -20,9 +20,13 @@ const covermenu=document.createElement('div');
 const covercontact=document.createElement('div');
 //header set up
 
-coverhome.classList.add('cover');
-covermenu.classList.add('cover', 'hidden');
-covercontact.classList.add('cover', 'hidden');
+liHome.classList.add('cover');
+liMenu.classList.add('cover', 'hidden');
+liContact.classList.add('cover', 'hidden');
+coverhome.id='coverhome';
+covermenu.id="covermenu";
+covercontact.id='covercontact';
+
 nav.append(coverhome);
 nav.append(covermenu);
 nav.append(covercontact);
@@ -45,18 +49,18 @@ li.forEach((item)=>{
       precover.classList.add('hidden');
         if(item.id === 'home') {
             contentHome();
-            coverhome.classList.remove('hidden');
+            liHome.classList.remove('hidden');
 
           }
       
           if(item.id === 'menu') {
             contentMenu();
-            covermenu.classList.remove('hidden');
+            liMenu.classList.remove('hidden');
           }
       
           if(item.id === 'contact') {
             contentContack();
-            covercontact.classList.remove('hidden');
+            liContact.classList.remove('hidden');
           }
         console.log(`clicked ${item.id}`);
    
