@@ -1,5 +1,6 @@
 function content() {
   const body = document.querySelector('body');
+  const container=document.querySelector('container');
   const content=document.createElement('div');
   if(document.querySelector('#content')) {
     document.querySelector('#content').remove();
@@ -14,7 +15,8 @@ function content() {
   content.append(text);
   content.append(img);
   content.append(div);
-  body.append(content); 
+  container.append(content)
+  body.append(container); 
 
 }
 export{content}

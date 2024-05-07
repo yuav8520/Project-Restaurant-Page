@@ -6,7 +6,7 @@ import { content as contentContack } from "./contact.js";
 
 //declerations genral
 const body=document.querySelector('body');
-const content = document.createElement('div');
+const container=document.createElement('container');
 const header=document.createElement('header');
 const nav=document.createElement('nav');
 const ul=document.createElement('ul');
@@ -70,5 +70,6 @@ li.forEach((item)=>{
 //final setup
 header.append(nav);
 body.append(header);
+body.append(container);
 contentHome();
 
