@@ -1,10 +1,21 @@
 ul{
     list-style: none;
     display: flex;
+    justify-content:center;
 }
 li{
     width: 10dvw;
     margin: 20px;
     background-color: orange;
     min-height: 40px;
+  
 }
+#content {
+    width: fit-content; 
+    margin: 0 auto; 
+    padding: 20px;
+   }
+   .cover:not(.hidden){
+    background-color: red;
+   }
+   
