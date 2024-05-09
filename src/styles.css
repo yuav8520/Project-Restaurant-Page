@@ -3,7 +3,7 @@ ul{
     display: flex;
     justify-content:center;
 }
-li{
+li:not(.items){
     width: 10dvw;
     margin: 20px;
     background-color: orange;
@@ -26,13 +26,9 @@ li{
     text-align: center;
    
    }
-   #home{
-
-
-   }
-   #cover{
-
-   }
-   #contact{
-
-   }
+.menu>ul{
+display: grid;
+grid-template-columns: repeat(2, 25dvw);
+grid-template-rows: repeat(5, 12dvh);
+grid-gap: 10px;
+}

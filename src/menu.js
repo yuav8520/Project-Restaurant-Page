@@ -1,3 +1,4 @@
+import { text } from "./itemenu.js";
 function content() {
   const body = document.querySelector('body');
   const container=document.querySelector('container');
@@ -6,17 +7,25 @@ function content() {
     document.querySelector('#content').remove();
   }
   content.id='content';
-  const text = document.createElement('div');
-  const img = document.createElement('img');
+  content.className='menu';
+  const ul = document.createElement('ul');
+  for (let index = 0; index < 10; index++) {
+    const li = document.createElement('li');
+    li.className='items';
+    if(text[index]!==null){
+    li.textContent=text[index];}
+    ul.append(li);
+  }
   const div = document.createElement('div');
-  img.src = '../src/images/pizza.jpeg';
-  text.textContent = 'This is the best pizza there is come join us in...';
+  
+
   div.textContent = 'This is spossed to be a menu page';
-  content.append(text);
-  content.append(img);
+
   content.append(div);
-  container.append(content)
+  content.append(ul);
+  container.append(content);
   body.append(container); 
 
 }
+
 export{content}
