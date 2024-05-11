@@ -1,4 +1,4 @@
-import { text } from "./itemenu.js";
+import { menu as menuitems } from "./info.js";
 function content() {
   const body = document.querySelector('body');
   const container=document.querySelector('container');
@@ -9,17 +9,15 @@ function content() {
   content.id='content';
   content.className='menu';
   const ul = document.createElement('ul');
+  ul.id= 'menu';
   for (let index = 0; index < 10; index++) {
     const li = document.createElement('li');
     li.className='items';
-    if(text[index]!==null){
-    li.textContent=text[index];}
+    if(menuitems[index]!==null){
+    li.textContent=menuitems[index];}
     ul.append(li);
   }
   const div = document.createElement('div');
-  
-
-  div.textContent = 'This is spossed to be a menu page';
 
   content.append(div);
   content.append(ul);

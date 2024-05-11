@@ -1,3 +1,5 @@
+import { staff } from "./info";
+
 function content() {
   const body = document.querySelector('body');
   const container=document.querySelector('container');
@@ -6,15 +8,29 @@ function content() {
     document.querySelector('#content').remove();
   }
   content.id='content';
-  const text = document.createElement('div');
-  const img = document.createElement('img');
-  const div = document.createElement('div');
-  img.src = '../src/images/pizza.jpeg';
-  text.textContent = 'This is the best pizza there is come join us in...';
-  div.textContent = 'This is spossed to be a contact page';
-  content.append(text);
-  content.append(img);
-  content.append(div);
+  const contactsign = document.createElement('h1');
+  const ul = document.createElement('ul');
+staff.forEach(member => {
+const memberli = document.createElement('li');
+const name=document.createElement('h3');
+const details=document.createElement('p');
+const rolename=document.createElement('div');
+const phone=document.createElement('div');
+const email=document.createElement('div');
+
+name.textContent=member.name;
+rolename.textContent=member.role;
+phone.textContent="Phone: "+member.phone;
+email.textContent="Email: "+member.email;
+
+details.append(rolename);
+details.append(phone);
+details.append(email);
+memberli.append(name);
+memberli.append(details);
+ul.append(memberli);
+})
+ content.append(ul);
   container.append(content)
   body.append(container); 
 

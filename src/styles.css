@@ -1,3 +1,11 @@
+body{
+    height: 100dvh;
+    width: 100dvw;
+    background-image: url(../src/images/lake.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+}
 ul{
     list-style: none;
     display: flex;
@@ -10,10 +18,20 @@ li:not(.items){
     min-height: 40px;
   
 }
+ul#menu{
+padding-top: 5dvh;
+padding-bottom: 5dvh;
+padding-right: 3dvw;
+}
 #content {
     width: fit-content; 
     margin: 0 auto; 
     
+   }
+   #content > *{
+    margin-top: 5dvh;
+    color: rgb(233, 243, 252);
+    background-color: rgba(11, 177, 127, 0.452);
    }
    .cover:not(.hidden){
     background-color: red;

@@ -39,6 +39,7 @@ liContact.id='contact';
 liHome.textContent='Home';
 liMenu.textContent='Menu';
 liContact.textContent='Contact';
+ul.id='nav';
 nav.append(ul);
 const li=ul.querySelectorAll('li');
 //event listner for li items
@@ -71,5 +72,6 @@ li.forEach((item)=>{
 header.append(nav);
 body.append(header);
 body.append(container);
+
 contentHome();
 
