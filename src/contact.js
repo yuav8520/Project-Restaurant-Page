@@ -9,8 +9,10 @@ function content() {
   }
   content.id='content';
   const contactsign = document.createElement('h1');
+  contactsign.textContent = 'Contact Us';
   const ul = document.createElement('ul');
   ul.id='contact-list';
+  ul.append(contactsign);
 staff.forEach(member => {
 const memberli = document.createElement('li');
 const name=document.createElement('h3');
